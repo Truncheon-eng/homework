@@ -4,17 +4,14 @@ metadata:
   name: frontend
   namespace: homework
 spec:
-  replicas: 1
-
+  replicas: 2
   selector:
     matchLabels:
       app: frontend
-
   template:
     metadata:
       labels:
         app: frontend
-
     spec:
       containers:
         - name: frontend
